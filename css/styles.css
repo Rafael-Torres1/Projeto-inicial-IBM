@@ -635,6 +635,245 @@ p {
   transform: translateY(-2px);
 }
 
+/* ===== SERVICE PAGES ===== */
+.service-page {
+  background: var(--beige);
+}
+
+.service-hero {
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.8), transparent 25%),
+    linear-gradient(135deg, #dfeeea 0%, #f9f6f2 45%, #ffffff 100%);
+  padding: 58px 0 38px;
+}
+
+.service-hero .container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.service-hero-copy .eyebrow {
+  margin-bottom: 18px;
+}
+
+.service-hero-copy h1 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0 0 18px;
+  color: var(--brown-dark);
+}
+
+.service-hero-copy p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--brown);
+}
+
+.service-hero .hero-actions {
+  margin-top: 28px;
+}
+
+.mini-stats {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.mini-stats li {
+  min-width: 120px;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(33,72,79,0.08);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.mini-stats strong,
+.mini-stats span {
+  display: block;
+}
+
+.mini-stats strong {
+  color: var(--brown-dark);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.mini-stats span {
+  color: var(--brown);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.service-visual {
+  background: linear-gradient(180deg, rgba(33,72,79,0.96), rgba(61,98,103,0.92));
+  color: var(--beige);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 18px 38px rgba(33,72,79,0.14);
+}
+
+.service-visual .visual-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  color: var(--beige-strong);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.service-visual .visual-badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e29768;
+}
+
+.service-visual h2 {
+  color: var(--beige);
+  margin: 0 0 18px;
+  font-size: clamp(1.5rem, 2vw, 2.1rem);
+}
+
+.service-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.service-feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--beige);
+}
+
+.service-feature-list li::before {
+  content: "✓";
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(207,232,227,0.18);
+  color: var(--beige-strong);
+  font-weight: 700;
+}
+
+.service-main {
+  padding: 36px 0 80px;
+}
+
+.content-panel {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(33,72,79,0.06);
+  padding: 30px;
+}
+
+.content-panel h2,
+.info-box h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--brown-dark);
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--brown);
+  line-height: 1.7;
+}
+
+.service-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: var(--brown-dark);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.info-box {
+  background: linear-gradient(180deg, #ffffff, #f5fbfa);
+  border: 1px solid rgba(33,72,79,0.08);
+}
+
+.price-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(33,72,79,0.1);
+  color: var(--brown);
+}
+
+.price-item:last-child {
+  border-bottom: 0;
+}
+
+.price-item strong {
+  color: var(--brown-dark);
+  font-size: 1.1rem;
+}
+
+.callout-box {
+  margin-top: 28px;
+  background: var(--brown-dark);
+  color: var(--beige);
+  border-radius: 16px;
+  padding: 24px 28px;
+}
+
+.callout-box h3 {
+  color: var(--beige);
+  margin: 0 0 10px;
+}
+
+.callout-box p {
+  margin: 0;
+  color: rgba(243,248,247,0.82);
+  line-height: 1.7;
+}
+
+.service-page .footer {
+  margin-top: 0;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero {
